@@ -1,9 +1,106 @@
-<mxfile host="app.diagrams.net" modified="2024-02-29T16:42:59.953Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" version="24.0.0" etag="7lLltyHxbJtFViTZfqY5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-29T16:49:19.896Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="IgePMGEUV1vFHPDRfj7P" version="24.0.0" type="github">
   <diagram name="Page-1" id="UXdB0pvu_ICugCTHPVds">
-    <mxGraphModel>
+    <mxGraphModel dx="880" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q28Enc5JeQBL5iI-DlRq-2" target="Q28Enc5JeQBL5iI-DlRq-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-2" value="&lt;div&gt;User&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="310" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q28Enc5JeQBL5iI-DlRq-4" target="Q28Enc5JeQBL5iI-DlRq-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-4" value="Tries to access https://foobar.com" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="425" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q28Enc5JeQBL5iI-DlRq-6" target="Q28Enc5JeQBL5iI-DlRq-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-6" value="Computer contacts a DNS which translates foobar.com into 8.8.8.8" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="312.5" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q28Enc5JeQBL5iI-DlRq-8" target="Q28Enc5JeQBL5iI-DlRq-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-8" value="Connection is established with the load balancer using TCP protocol" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="70" y="307.5" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-9" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="600" width="350" height="170" as="geometry">
+            <mxRectangle x="50" y="430" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-10" value="&lt;div&gt;Web Server&lt;/div&gt;&lt;div&gt;(NGINX)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-9">
+          <mxGeometry x="20" y="23.129999999999995" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-11" value="&lt;div&gt;Application Files&lt;/div&gt;&lt;div&gt;(website&#39;s code)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-9">
+          <mxGeometry x="20" y="109.38" width="120" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Q28Enc5JeQBL5iI-DlRq-9" source="Q28Enc5JeQBL5iI-DlRq-10" target="Q28Enc5JeQBL5iI-DlRq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-13" value="&lt;div&gt;Application Server&lt;/div&gt;&lt;div&gt;(PHP server)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-9">
+          <mxGeometry x="200" y="108.13" width="120" height="38.75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Q28Enc5JeQBL5iI-DlRq-9" source="Q28Enc5JeQBL5iI-DlRq-11" target="Q28Enc5JeQBL5iI-DlRq-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-15" value="&lt;div&gt;Database&lt;/div&gt;&lt;div&gt;(MySQL)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-9">
+          <mxGeometry x="200" y="38.129999999999995" width="120" height="40.63" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Q28Enc5JeQBL5iI-DlRq-9" source="Q28Enc5JeQBL5iI-DlRq-13" target="Q28Enc5JeQBL5iI-DlRq-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-17" value="Server 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-9">
+          <mxGeometry x="280" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q28Enc5JeQBL5iI-DlRq-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="640" />
+              <mxPoint x="320" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q28Enc5JeQBL5iI-DlRq-18" target="Q28Enc5JeQBL5iI-DlRq-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-18" value="&lt;div&gt;Load&lt;/div&gt;&lt;div&gt;Balancer&lt;/div&gt;&lt;div&gt;(HAProxy)&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="92.5" y="440" width="75" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-21" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="410" width="350" height="170" as="geometry">
+            <mxRectangle x="50" y="430" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-22" value="&lt;div&gt;Web Server&lt;/div&gt;&lt;div&gt;(NGINX)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-21">
+          <mxGeometry x="20" y="23.129999999999995" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-23" value="&lt;div&gt;Application Files&lt;/div&gt;&lt;div&gt;(website&#39;s code)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-21">
+          <mxGeometry x="20" y="109.38" width="120" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Q28Enc5JeQBL5iI-DlRq-21" source="Q28Enc5JeQBL5iI-DlRq-22" target="Q28Enc5JeQBL5iI-DlRq-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-25" value="&lt;div&gt;Application Server&lt;/div&gt;&lt;div&gt;(PHP server)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-21">
+          <mxGeometry x="200" y="108.13" width="120" height="38.75" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Q28Enc5JeQBL5iI-DlRq-21" source="Q28Enc5JeQBL5iI-DlRq-23" target="Q28Enc5JeQBL5iI-DlRq-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-27" value="&lt;div&gt;Database&lt;/div&gt;&lt;div&gt;(MySQL)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-21">
+          <mxGeometry x="200" y="38.129999999999995" width="120" height="40.63" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Q28Enc5JeQBL5iI-DlRq-21" source="Q28Enc5JeQBL5iI-DlRq-25" target="Q28Enc5JeQBL5iI-DlRq-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q28Enc5JeQBL5iI-DlRq-29" value="Server 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Q28Enc5JeQBL5iI-DlRq-21">
+          <mxGeometry x="280" width="70" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
